@@ -18,7 +18,7 @@
     </header>
 
     <main>
-        <section class="product-list">
+        <div class="products">
             <div class="product">
                 <img src="apple.jpg" alt="Apple">
                 <h2>Apples</h2>
@@ -56,7 +56,7 @@
                 <a href="https://wa.me/254705719709?text=I%20would%20like%20to%20order%20Banana%20for%20$0.50" class="whatsapp-button">Request via WhatsApp</a>
             </div>
             <!-- Add more products here -->
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -87,11 +87,13 @@ nav ul li {
     margin-right: 15px;
 }
 
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+.products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+           
+        }
 }
 
 .product {
