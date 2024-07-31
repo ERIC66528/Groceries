@@ -20,6 +20,10 @@
         <a href="https://facebook.com/groups/238813554860711/" class="facebook-button">Join our Facebook group:<br>SOKONI STORES</br></a>
     </p>
     
+    <video id="myVideo" width="600" controls autoplay muted>
+        <source src="your-video-file.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
         
 
     <footer>
@@ -56,8 +60,8 @@ nav ul li {
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 30px;
-      border-radius: 5px;
+      font-size: 40px;
+      border-radius: 15px;
 
 }
 
@@ -68,3 +72,13 @@ footer {
     font-size:25px;
 }
 </style>
+<script>
+window.onload = function() {
+            var video = document.getElementById('myVideo');
+            video.play().catch(function(error) {
+                console.log('Autoplay was prevented:', error);
+                // Handle autoplay restriction here (e.g., show a play button to the user)
+            });
+        };
+    
+</script>
